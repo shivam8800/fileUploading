@@ -1,0 +1,35 @@
+{
+  "name": "fileuploads",
+  "version": "1.0.0",
+  "description": "this is the product which based on file uploading at server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bootstrap.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivam8800/fileUploading.git"
+  },
+  "keywords": [
+    "fsdjf"
+  ],
+  "author": "shivam raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivam8800/fileUploading/issues"
+  },
+  "homepage": "https://github.com/shivam8800/fileUploading#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.0.11",
+    "hapi": "^16.6.2",
+    "inert": "^4.2.1",
+    "joi": "^13.0.1",
+    "nodemon": "^1.12.1",
+    "vision": "^4.1.1"
+  }
+}
