@@ -1,5 +1,6 @@
 import fs from 'fs'
 var formidable = require('formidable');
+
 const routes =[
 	{
         method:'GET',
@@ -17,7 +18,7 @@ const routes =[
 				var todaydate = new Date();
 				var stringdate = todaydate.toISOString();
 
-				const filepath = '/home/shivam/NodeJs/fileuploads/uploads/' + stringdate + ".txt"
+				const filepath = __dirname +'/uploads/' + stringdate + ".txt"
 				var file = fs.openSync(filepath, 'w+');
 
 				fs.writeFile(filepath, payload, function (err) {

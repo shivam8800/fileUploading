@@ -54,17 +54,16 @@
 
     </style>
     <script type="text/javascript">
-    	$("#submitfile").click(function(event){
+    	 $("#submitfile").click(function(event){
     		var submit = document.getElementById("inputfile");
 		    var file = submit.files[0];
 		    // console.log("File name: " + file.name);
 		    // console.log("File size: " + file.size);
 		    // console.log("File data: " + file.data);
 		    var form = new FormData();
-			form.append("file", file.name);
+			form.append("file", file);
                 $.ajax({
 					url : "http://127.0.0.1:8000/file",
-					// url : "http://127.0.0.1:8000/submit",
 					type : "POST",
 					data : form,
 					processData: false,
@@ -77,7 +76,7 @@
                         alert(err);
                     }
                 });
-		});
+			});
 
     </script>
 </body> 
